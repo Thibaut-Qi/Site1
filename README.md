@@ -4,4 +4,6 @@ Ajout de README.md
 
 Ajout d'images
 
-Squelette HTML
+Squelette HTML de la page principal
+
+Ajout du style de la page principal

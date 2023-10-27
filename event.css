@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Junge&family=Old+Standard+TT&family=Prompt:wght@100&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: junge, sans-serif;
+    
+}
+.button {
+
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 3px solid #8e978e;
+    border-radius: 53px;
+    background-color:rgba(0, 0, 0, 0.93);
+    font: italic normal bold 20px arial;
+    color: #ffffff;
+}
+
+.button:hover {
+    background:linear-gradient(90deg, #d99b71,#afac69,#78b887); 
+    
+}
+
+.button:active {
+    background: linear-gradient(90deg, #b46530,#9e9934,#24963f);  
+
+}
+
+img {
+    margin: 20px 0 20px 0px;
+    width: 50%;
+    box-shadow: 16px 20px 15px -4px rgba(2,2,0.1);
+    height: 600px;
+    border-radius: 10px;
+    
+}
+
+
+p{
+    background-color: rgb(241, 245, 242);
+    box-shadow: 8px 13px 43px 9px #161616;
+    font-family: prompte , sans-serif;
+    width: 30%;
+    max-height: 40%;
+    padding: 10px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #d99b71,#afac69,#78b887);
+}
+    
+
+
+/* ************************ HEADER ***************** */
+
+
+
+#header {
+    overflow: hidden;
+    position:fixed;
+    background-color:rgba(0, 0, 0, 0.93);
+    width: 100%;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+}
+
+#logo {
+    font-size: 2rem;
+    color: white;
+    
+}
+
+#navbar a {
+    font-size: 1.1rem;
+    color: white;
+    margin: 2rem;
+    
+}
+
+#navbar a:hover {
+    position: relative;
+    font-weight: bold;
+    bottom: 2px;
+}
+
+#logo:hover {
+    position: relative;
+    font-weight: bold;
+    bottom: 2px;
+}
+
+
+
+
+/* *********************** PROJET  *********************** */
+#china-project{
+    padding-top: 64px;
+}
+.project {
+    background-color:rgb(243, 233, 216);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+    
+.project img {
+    display: flex;
+    justify-content: center;
+}  
+
+#peru-project img {
+    margin-top: 20px;
+}
+#peru-project .project {
+   
+    background-color: #ffffff;
+
+}
+
+.project button {
+    float: right;
+    margin-top: 550PX;
+    
+}
+
+
+
+
+/* *************MEDIA QUERIES *************** */
+
+
+ @media  screen and ( max-width:1680px){
+    
+     p{
+       font-size: 0.9rem;
+     }
+     .project button {
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+     }
+    img {
+        height: 550px;
+    }
+
+ }
+
+
+
+ /* *************** 1600px ***************** */
+
+
+
+ @media  screen and ( max-width:1600px){
+    img {
+        height: 400px;
+        width: 40%;
+    }
+    .project button {
+        margin-bottom: 10%;
+    }
+    a{
+        justify-content: center;
+    }
+}
+
+/* *************** 1200px ***************** */
+
+
+
+@media  screen and ( max-width:1200px){
+     .project{
+       flex-direction: column;
+       justify-content: center;
+       
+    }
+    img {
+        margin: 20px 0 20px 0;
+        width: 80%;
+        height: 600px;
+    }
+    p{  
+        margin: 0;
+        width: 80%;
+    }
+    .project button {
+        margin-top: 20px;
+    }   
+}
+
+/* *************** 990px ***************** */
+
+
+@media  screen and ( max-width:990px){
+    img{
+        height:50% ;
+    }
+    p{
+        font-size: 0.8rem;
+        height: 40%;
+    }
+}
+
+/* *************** 790px ***************** */
+
+
+@media  screen and ( max-width:790px){
+    #logo {
+        font-size: 1.3rem;
+    }
+    #navbar a{
+        
+        margin: 30px;
+        font-size: .9rem;
+}
+}
+
+/* *************** 670px ***************** */
+
+
+@media  screen and ( max-width:670px){
+    #header {
+        padding: 20px;
+    }
+    #navbar a{
+        margin: 9px;
+    }
+    input{
+        width:100%;
+    }
+    textarea{
+        width: 100%;
+    }
+}
+
+/* *************** 460px ***************** */
+
+
+@media  screen and ( max-width:460px){
+    #header{
+        padding: 15px;
+    }
+    #logo{
+        padding: 3px;
+    }
+    #navbar a{
+        font-size: 0.75rem;
+        margin: 1px;
+    
+    }
+    #footer i {
+        display: none;
+    }
+    #footer input,textarea {
+     font-size: 0.9rem;
+    }
+}
+
+/* ****************** FOOTER ************** */
+
+
+#footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f1d1d;
+    height: 400px;
+}
+
+#form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}  
+
+.footer-container{
+    width: 100%;
+}
+#form h4 {
+    display: flex; 
+    justify-content: center;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+} 
+#form a {
+    display: flex;
+    justify-content: center;
+}
+
+    
+ #copyright {
+   flex-direction: column-reverse;
+   height: 100%;
+   display: flex;
+   font-family: prompte, sans-serif;
+   padding: 0 0 10px 10px;
+}   
+
+
+
+/* ****************** FORMULAIRE ******************** */
+    
+    
+input,
+textarea {
+   
+   border: none;
+   border-radius: 7px;
+} 
+
+input {
+   font-size: 1rem;
+   padding: 10px 10px ;
+
+}
+
+textarea {
+   padding-left:10px;
+   padding-top: 5PX;
+   resize: none;
+   height: 130px;
+   font-size:1.2rem ;
+}
+
+#form button {
+   font-style: normal;
+   font-size: 1rem;
+   padding: 5px 30px 5px 30px;
+}  
+
+/* ******************** ICONES ************** */
+
+
+#icones {
+   padding-right: 10px;
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: space-between;
+   align-items: flex-end;
+   width: 100%;
+   height: 100%;
+   padding: 10px 10px 10px 0;
+   
+} 
+
+a {
+   color: #ffffff;
+}
+
+i {
+   padding-right: 5px;
+}
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
